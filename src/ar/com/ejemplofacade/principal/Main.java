@@ -51,7 +51,7 @@ public class Main {
 		opcion = ingreso.nextLine();
 		if(opcion.equals("no")) {
 			homeTheater.ApagarTodo();
-			
+			ingreso.close();
 		}else {
 			menu();
 		}
