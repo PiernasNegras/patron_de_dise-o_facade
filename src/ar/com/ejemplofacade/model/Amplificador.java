@@ -13,10 +13,10 @@ public class Amplificador {
 	}
 	
 	
-	public Amplificador(boolean encendido, String volumen) {
+	public Amplificador(boolean encendido) {
 		super();
 		this.encendido = encendido;
-		this.volumen = volumen;
+		
 	}
 
 
@@ -26,12 +26,7 @@ public class Amplificador {
 	public void setEncendido(boolean encendido) {
 		this.encendido = encendido;
 	}
-	public String getVolumen() {
-		return volumen;
-	}
-	public void setVolumen(String volumen) {
-		this.volumen = volumen;
-	}
+	
 	
 	
 }
