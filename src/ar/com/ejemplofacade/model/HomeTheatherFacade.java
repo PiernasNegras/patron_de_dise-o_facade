@@ -35,10 +35,26 @@ public class HomeTheatherFacade {
 		this.proyector = proyector;
 	}
 	
-	public void CrearHomeTheaterFacade(ReproductorDeDvd dvd, Amplificador amp, Proyector proyector) {
-		
+	
+	
+	public void MirarPelicula(String pelicula) {
+		dvd.setEncendido(true);
+		dvd.setReproducirPelicula(pelicula);
+		amp.setEncendido(true);
+		proyector.setEncendido(true);
+		System.out.println("Sistema home encendido");
+		System.out.println("Mirando la siguiente película: "+dvd.getReproducirPelicula());
 	}
 	
+	public void ApagarTodo() {
+		
+		dvd.setEncendido(false);
+		amp.setEncendido(false);
+		proyector.setEncendido(false);
+		
+		System.out.println("Apagando sistema...");
+		System.out.println("Sistema Home apagado");
+	}
 	
 	
 	
