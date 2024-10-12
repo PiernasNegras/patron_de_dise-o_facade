@@ -12,18 +12,9 @@ public class Main {
 	public static void main(String[] args) {
 		
 		menu();
-		
-		
-		
-		
-		
-		
-		
-		
+				
 		
 	}
-	
-	
 	
 	
 	public static void menu() {
@@ -33,8 +24,6 @@ public class Main {
 		Proyector proyector = new Proyector();
 		String pelicula= null;
 		String opcion;
-		
-		
 		
 		System.out.println("Bienvenido al sistema de homeTheater");
 		
@@ -56,14 +45,7 @@ public class Main {
 			menu();
 		}
 		
-		
-	
-		
-		
-		
-		
-		
-		
+			
 	}
 
 
