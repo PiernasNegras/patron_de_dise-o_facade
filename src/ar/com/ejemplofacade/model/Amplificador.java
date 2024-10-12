@@ -4,7 +4,7 @@ package ar.com.ejemplofacade.model;
 public class Amplificador {
 
 	public boolean encendido;
-	public String volumen;
+	
 	
 	
 	
