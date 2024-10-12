@@ -33,7 +33,7 @@ public class Main {
 		Proyector proyector = new Proyector();
 		String pelicula= null;
 		String opcion;
-		int flag= 1;
+		
 		
 		
 		System.out.println("Bienvenido al sistema de homeTheater");
@@ -51,7 +51,7 @@ public class Main {
 		opcion = ingreso.nextLine();
 		if(opcion.equals("no")) {
 			homeTheater.ApagarTodo();
-			flag=1;
+			
 		}else {
 			menu();
 		}
