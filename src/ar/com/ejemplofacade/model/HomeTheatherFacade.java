@@ -42,6 +42,9 @@ public class HomeTheatherFacade {
 		dvd.setReproducirPelicula(pelicula);
 		amp.setEncendido(true);
 		proyector.setEncendido(true);
+		System.out.println("Estado del dvd: "+dvd.isEncendido());
+		System.out.println("Estado del amplificador: "+amp.isEncendido());
+		System.out.println("Estado del proyector: "+proyector.isEncendido());
 		System.out.println("Sistema home encendido");
 		System.out.println("Mirando la siguiente película: "+dvd.getReproducirPelicula());
 	}
@@ -52,7 +55,11 @@ public class HomeTheatherFacade {
 		amp.setEncendido(false);
 		proyector.setEncendido(false);
 		
+		
 		System.out.println("Apagando sistema...");
+		System.out.println("Estado del dvd: "+dvd.isEncendido());
+		System.out.println("Estado del amplificador: "+amp.isEncendido());
+		System.out.println("Estado del proyector: "+proyector.isEncendido());
 		System.out.println("Sistema Home apagado");
 	}
 	
