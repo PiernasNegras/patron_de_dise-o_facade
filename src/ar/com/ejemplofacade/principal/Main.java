@@ -33,25 +33,31 @@ public class Main {
 		Proyector proyector = new Proyector();
 		String pelicula= null;
 		String opcion;
+		int flag= 1;
 		
-		do {
 		
 		System.out.println("Bienvenido al sistema de homeTheater");
+		
 		System.out.println("Ingrese el nombre de la pelicula que quiere ver: ");
 		
 		Scanner ingreso = new Scanner(System.in);
 		pelicula=ingreso.nextLine();
-	
+		
 		HomeTheatherFacade homeTheater = new HomeTheatherFacade(dvd,amp,proyector); 
 		homeTheater.MirarPelicula(pelicula);
 		
 		System.out.println("Desea ver otra película?: ");
-		Scanner respuesta = new Scanner(System.in);
-		opcion = respuesta.nextLine();
+		
+		opcion = ingreso.nextLine();
 		if(opcion.equals("no")) {
 			homeTheater.ApagarTodo();
-		}}while(opcion=="si");
+			flag=1;
+		}else {
+			menu();
+		}
 		
+		
+	
 		
 		
 		
